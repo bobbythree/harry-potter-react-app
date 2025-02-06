@@ -13,11 +13,11 @@ export default function ListItems() {
   }
 
   return (
-    <>    
+    <div className="flex flex-col items-center">    
       {data && data.map((book, index) => (
         <List key={index}>
           <li className="list-row">
-            <div><img className="size-12 rounded-box" src={book.cover}/></div>
+            <div><img className="size-12 rounded-sm" src={book.cover}/></div>
             <div>
               <div className="text-primary-content">{`Book ${book.number}`}</div>
               <div className="text-secondary">{book.title}</div>
@@ -26,7 +26,7 @@ export default function ListItems() {
             </li>
         </List>
       ))}      
-    </>
+    </div>
   );
 }
 
