@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query"
 import List from "./List";
 
 
-export default function ListItems() {
+export default function BookList() {
   const { data, isPending, refetch, error } = useQuery({
     queryKey: ["books"],
     queryFn: getBooks

@@ -1,9 +1,9 @@
-import ListItems from "./components/ListItems"
+import BookList from "./components/BookList"
 
 export default function App() {
   return (
     <>
-      <ListItems />
+      <BookList />
     </>
   )
 }
