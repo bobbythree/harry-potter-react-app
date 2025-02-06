@@ -13,11 +13,11 @@ export default function BookList() {
   }
 
   return (
-    <div className="flex flex-col items-center content-center text-center">
-      <div class="collapse collapse-arrow bg-base-200 border border-base-300 w-1/2">
+    <div className="flex flex-col items-center content-center">
+      <div class="collapse collapse-arrow bg-base-200 border border-base-300 w-1/2 text-center">
         <input type="checkbox" />
         <div class="collapse-title font-semibold">Book Titles</div>
-        <div class="collapse-content text-sm flex flex-col items-center">
+        <div class="collapse-content text-sm flex flex-col items-center text-start">
           {data && data.map((book, index) => (
             <List key={index}>
               <li className="list-row">
