@@ -20,7 +20,7 @@ export default function ListItems() {
             <div><img className="size-12 rounded-sm" src={book.cover}/></div>
             <div>
               <div className="text-primary-content">{`Book ${book.number}`}</div>
-              <div className="text-secondary">{book.title}</div>
+              <div className="text-secondary text-lg">{book.title}</div>
             </div>
             <p className="list-col-wrap text-xs">{book.description}</p>
             </li>
