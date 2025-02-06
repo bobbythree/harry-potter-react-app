@@ -1,9 +1,13 @@
-import ListItems from "./components/ListItems"
+import BookList from "./components/BookList"
+import SpellList from "./components/SpellList"
+import CharacterList from "./components/CharacterList"
 
 export default function App() {
   return (
     <>
-      <ListItems />
+      <BookList />
+      <CharacterList />
+      <SpellList />
     </>
   )
 }
