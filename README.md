@@ -1,5 +1,5 @@
 ## Harry Potter React App  
-### An app that displays information about the Harry Potter Series.  
+### A React + Vite app that calls a Harry Potter API and displays the data. Work in progress.  
 
 ## to Run:  
 ### clone this repo to your local machine  
