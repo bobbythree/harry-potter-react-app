@@ -14,10 +14,10 @@ export default function SpellList() {
 
   return (
     <div className="flex flex-col items-center content-center text-center">
-      <div class="collapse collapse-arrow bg-base-200 border border-base-300 w-1/2">
+      <div className="collapse collapse-arrow bg-base-200 border border-base-300 w-1/2">
         <input type="checkbox" />
-        <div class="collapse-title font-semibold">Spells</div>
-        <div class="collapse-content text-sm grid grid-cols-2 text-start place-items-center">
+        <div className="collapse-title font-semibold">Spells</div>
+        <div className="collapse-content text-sm grid grid-cols-2 text-start place-items-center">
           {data && data.map((spell, index) => (
             <List key={index}>
               <li className="list-row h-30">
