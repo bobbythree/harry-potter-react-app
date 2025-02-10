@@ -13,7 +13,7 @@ export default function BookList() {
   }
 
   return (
-    <div className="flex flex-col items-center content-center">
+    <div className="flex flex-col items-center content-center font-primary">
       <div className="collapse collapse-arrow bg-base-100 border border-base-300 w-1/2 text-center">
         <input type="checkbox" />
         <div className="collapse-title font-semibold">Book Titles</div>

@@ -13,7 +13,7 @@ export default function SpellList() {
   }
 
   return (
-    <div className="flex flex-col items-center content-center text-center">
+    <div className="flex flex-col items-center content-center text-center font-primary">
       <div className="collapse collapse-arrow bg-base-100 border border-base-300 w-1/2">
         <input type="checkbox" />
         <div className="collapse-title font-semibold">Spells</div>
