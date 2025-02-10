@@ -14,13 +14,13 @@ export default function CharacterList() {
 
   return (
     <div className="flex flex-col items-center content-center">
-      <div className="collapse collapse-arrow bg-base-200 border border-base-300 w-1/2 text-center">
+      <div className="collapse collapse-arrow bg-base-100 border border-base-300 w-1/2 text-center">
         <input type="checkbox" />
         <div className="collapse-title font-semibold">Characters</div>
         <div className="collapse-content text-sm flex flex-col items-center text-start">
           {data && data.map((character, index) => (
             <List key={index}>
-              <li className="list-row">
+              <li className="list-row bg-base-300">
                 <div><img className="size-12 rounded-sm" src={character.image}/></div>
                 <div>
                   <div className="text-secondary text-lg">{character.fullName}</div>
