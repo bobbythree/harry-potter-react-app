@@ -19,7 +19,7 @@ export default function CharacterList() {
 
   return (
     <div className="flex flex-col items-center content-center font-primary">
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300 w-1/2 text-center">
+      <div className="collapse collapse-arrow bg-base-100 border border-base-300 md:w-1/2 w-7/8 text-center">
         <input type="checkbox" />
         <div className="collapse-title font-semibold">Characters</div>
         <div className="collapse-content text-sm flex flex-col items-center text-start">
