@@ -22,8 +22,8 @@ export default function BookList() {
             <List key={index}>
               <li className="list-row bg-base-300">
                 <div>
+                  <img className="h-18 w-14 rounded-sm mb-2" src={book.cover}/>
                   <div className="text-primary-content">{`Book ${book.number}`}</div>
-                  <img className="size-12 rounded-sm" src={book.cover}/>
                   <div className="text-secondary text-lg">{book.title}</div>
                 </div>
                 <p className="list-col-wrap text-xs">{book.description}</p>
