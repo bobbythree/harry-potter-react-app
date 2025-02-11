@@ -18,7 +18,6 @@ export default function CharacterList() {
     }
 
   return (
-    <>
     <List title="Characters">
       {data && data.map((character, index) => (
         <div key={index} className="bg-warning-content p-1 w-2/2">
@@ -32,11 +31,9 @@ export default function CharacterList() {
               {character.interpretedBy ? `Played by: ${character.interpretedBy}` : 'Played by: Not Available'}
             </p>
           </li>
-        </div>
-        
-    ))}      
+        </div>       
+      ))}      
     </List>
-    </>    
   );
 }
 

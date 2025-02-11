@@ -16,8 +16,7 @@ export default function BookList() {
     return <Spinner />
   }
 
-  return (
-    <>
+  return (    
     <List title="Book Titles">
       {data && data.map((book, index) => (
         <div key={index} className="bg-warning-content p-1">
@@ -29,11 +28,10 @@ export default function BookList() {
             </div>
             <p className="list-col-wrap text-xs">{book.description}</p>
           </li>
-        </div>
-        
-    ))}      
+        </div>        
+      ))}      
     </List>
-    </>    
+     
   );
 }
 

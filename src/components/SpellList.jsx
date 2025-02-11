@@ -18,24 +18,20 @@ export default function SpellList() {
     }
 
   return (
-    <>
     <List title="Spells">
       <div className="grid sm:grid-cols-2  grid-cols-1 gap-2 h-auto">
       {data && data.map((spell, index) => (
-          <div key={index} className="bg-warning-content p-1 w-2/2">
-          <li className="list-row h-2/2 bg-base-300">
-            <div>
-              <div className="text-secondary text-lg">{spell.spell}</div>
-            </div>
-            <p className="list-col-wrap text-xs">{spell.use}</p>
-          </li>
+        <div key={index} className="bg-warning-content p-1 w-2/2">
+        <li className="list-row h-2/2 bg-base-300">
+          <div>
+            <div className="text-secondary text-lg">{spell.spell}</div>
           </div>
-        
-        
+          <p className="list-col-wrap text-xs">{spell.use}</p>
+        </li>
+        </div>        
       ))}      
       </div>
     </List>
-    </>
   )   
 }
 
