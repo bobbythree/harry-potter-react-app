@@ -20,7 +20,8 @@ export default function BookList() {
     <>
     <List title="Book Titles">
       {data && data.map((book, index) => (
-        <li key={index} className="list-row bg-base-300">
+        <div className="bg-warning-content p-1">
+          <li key={index} className="list-row bg-base-300">
           <div>
             <img className="h-18 w-14 rounded-sm mb-2" src={book.cover}/>
             <div className="text-primary-content">{`Book ${book.number}`}</div>
@@ -28,6 +29,8 @@ export default function BookList() {
           </div>
           <p className="list-col-wrap text-xs">{book.description}</p>
         </li>
+        </div>
+        
     ))}      
     </List>
     </>    
