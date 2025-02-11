@@ -17,27 +17,23 @@ export default function BookList() {
   }
 
   return (
-    <div className="flex flex-col items-center content-center font-primary">
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300 md:w-1/2 w-7/8 text-center">
-        <input type="checkbox" />
-        <div className="collapse-title font-semibold">Book Titles</div>
-        <div className="collapse-content text-sm flex flex-col items-center text-start">
-          {data && data.map((book, index) => (
-            <List key={index}>
-              <li className="list-row bg-base-300">
-                <div>
-                  <img className="h-18 w-14 rounded-sm mb-2" src={book.cover}/>
-                  <div className="text-primary-content">{`Book ${book.number}`}</div>
-                  <div className="text-secondary text-lg">{book.title}</div>
-                </div>
-                <p className="list-col-wrap text-xs">{book.description}</p>
-                </li>
-            </List>
-          ))}      
+    <>
+    <List title="Book Titles">
+      {data && data.map((book, index) => (
+        <div key={index} className="bg-warning-content p-1">
+          <li className="list-row bg-base-300">
+            <div>
+              <img className="h-18 w-14 rounded-sm mb-2" src={book.cover}/>
+              <div className="text-primary-content">{`Book ${book.number}`}</div>
+              <div className="text-secondary text-lg">{book.title}</div>
+            </div>
+            <p className="list-col-wrap text-xs">{book.description}</p>
+          </li>
         </div>
-      </div>
-    
-    </div>
+        
+    ))}      
+    </List>
+    </>    
   );
 }
 

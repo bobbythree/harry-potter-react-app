@@ -18,29 +18,25 @@ export default function CharacterList() {
     }
 
   return (
-    <div className="flex flex-col items-center content-center font-primary">
-      <div className="collapse collapse-arrow bg-base-100 border border-base-300 md:w-1/2 w-7/8 text-center">
-        <input type="checkbox" />
-        <div className="collapse-title font-semibold">Characters</div>
-        <div className="collapse-content text-sm flex flex-col items-center text-start">
-          {data && data.map((character, index) => (
-            <List key={index}>
-              <li className="list-row bg-base-300">
-                <div><img className="size-12 rounded-sm" src={character.image}/></div>
-                <div>
-                  <div className="text-secondary text-lg">{character.fullName}</div>
-                  <div className="text-primary-content">{`House: ${character.hogwartsHouse}`}</div>
-                </div>
-                <p className="list-col-wrap text-xs">
-                  {character.interpretedBy ? `Played by: ${character.interpretedBy}` : 'Played by: Not Available'}
-                </p>
-                </li>
-            </List>
-          ))}      
+    <>
+    <List title="Characters">
+      {data && data.map((character, index) => (
+        <div key={index} className="bg-warning-content p-1 w-2/2">
+          <li className="list-row bg-base-300">
+            <div>
+              <img className="size-12 rounded-sm mb-2" src={character.image}/>
+              <div className="text-secondary text-lg">{character.fullName}</div>
+              <div className="text-primary-content">{`House: ${character.hogwartsHouse}`}</div>
+            </div>
+            <p className="list-col-wrap text-xs">
+              {character.interpretedBy ? `Played by: ${character.interpretedBy}` : 'Played by: Not Available'}
+            </p>
+          </li>
         </div>
-      </div>
-    
-    </div>
+        
+    ))}      
+    </List>
+    </>    
   );
 }
 
