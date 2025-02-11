@@ -21,7 +21,7 @@ export default function CharacterList() {
     <>
     <List title="Characters">
       {data && data.map((character, index) => (
-        <div key={index} className="bg-warning-content p-1">
+        <div key={index} className="bg-warning-content p-1 w-2/2">
           <li className="list-row bg-base-300">
             <div>
               <img className="size-12 rounded-sm mb-2" src={character.image}/>
