@@ -5,6 +5,7 @@
 ### clone this repo to your local machine  
 ### open a terminal in the project's root directory  
 ### type ```npm install```  
-### type ```npm run dev``` 
-
-view online: https://harry-potter-react-app.vercel.app/
+### type ```npm run dev```   
+  
+## View live site:  
+https://harry-potter-react-app.vercel.app/
