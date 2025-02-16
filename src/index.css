@@ -9,13 +9,6 @@
   src: url(./assets/HarryP-MVZ6w.ttf)
 }
 
-.heading {
-  font-family: HarryP;
-  font-size: 8em;
-  text-align: center;
-}
-
-
 @theme {
   --font-primary: "Cinzel", serif;
 }
