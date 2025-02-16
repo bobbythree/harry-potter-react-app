@@ -36,11 +36,13 @@ export default function ScrollToTopButton() {
       left: '87%',
       opacity: 0.3,
       bottom: '40px',
-      height: '20px',
+      width: '40px',
+      height: '40px',
       fontSize: '3rem',
       zIndex: 1,
       cursor: 'pointer',
       color: 'gray',
+      '-webkit-appearance': 'none'
       }}>
       <FaArrowCircleUp onClick=
       {scrollToTop} style={{display: isVisible ? 'block' : 'none', width: '40px', height: '40px'}} />
