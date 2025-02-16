@@ -42,7 +42,8 @@ export default function ScrollToTopButton() {
       cursor: 'pointer',
       color: 'gray',
       }}>
-      <FaArrowCircleUp onClick={scrollToTop} style={{display: isVisible ? 'block' : 'none'}} />
+      <FaArrowCircleUp onClick=
+      {scrollToTop} style={{display: isVisible ? 'block' : 'none', width: '40px', height: '40px'}} />
     </button>
   )
 }
